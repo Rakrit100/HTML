@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head><title>SUM OF N NUMBERS</title>
+<script type="text/javascript">
+	function sum()
+	{
+		var n,s,response;
+		n=prompt("Enter a positive integer");
+		n=parseInt(n);
+		s=0;
+		for(var i=1;i<=n;i++)
+			s=s+i;
+		alert("Sum of numbers upto "+n+" is "+s);
+		response=confirm("Happy with the output??");
+		if(response==true)
+			{
+				alert("Happy");
+				return true;
+			}
+		else
+		{
+			alert("Not Happy");
+			return false;
+		}
+	}
+</script>
+	</head>
+<body>
+	<h1 align="center"> Sum of N Numbers</h1>
+	<form>
+	<input type="button" value="Calculate Sum " onclick="sum()"/>
+	</form>
+</body>
+</html>

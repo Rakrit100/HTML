@@ -1,0 +1,36 @@
+<html>
+<head>
+        <title>FORM VALIDATION</title>
+</head>
+<body>
+    <form class="form">
+        <h1>FORM VALIDATION</h1>
+        <label for="name">USERNAME: </label>
+        <input type="text" id="username" placeholder="USERNAME" value=""><br><br>
+        <label>AGE: </label>
+        <input type="text" id="age" placeholder="AGE" value=""><br><br>
+        <input type="submit" value="Submit" id="btn" onclick="validation();">
+    </form>
+    <script>
+        var user_name=document.getElementById("username")
+        var user_age=document.getElementById("age")
+        function validation()
+        {
+           var letters = /^[A-Z,a-z]+$/;
+           var age=/^[0-9]+$/;
+			if(((user_name.value.match(letters))&&(user_age.value.match(age))))
+				{
+					window.alert('Form Validated');
+				}
+           if(!(user_name.value.match(letters)))
+           {
+            window.alert('Please input alphabet characters only');
+           }
+           if(!(user_age.value.match(age)))
+           {
+            window.alert('Please Input valid age');
+           }
+        }
+    </script>
+</body>
+</html>

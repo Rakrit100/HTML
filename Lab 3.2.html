@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <title>INTERNSHIP FORM</title>
+    <!-- for css -->
+    <style>
+        body{
+            background: #F99B7D;;
+           
+        }
+        .inner-box{
+            background-color:#8BACAA;
+           
+        }
+    </style>
+</head>
+<body>
+        <div class="inner-box">
+            <h2 align="center">COLLEGE APPLICATION FORM 2023-2024</h2>
+            <form action="validationpg.html">
+                <label>STUDENT NAME :</label>
+                <input type="text" placeholder="Student name"><br><br>
+                <label>EMAIL :</label>
+                <input type="email"placeholder="Email"><br><br>
+                <label>Gender :</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label><br><br>
+                <label >COURSE :</label>
+                <input list="course" placeholder="Course">
+                <datalist id="course">
+                  <option value="BCA">
+                  <option value="BCOM">
+                  <option value="BBA">
+                  <option value="BA">
+                  <option value="BSC">
+                  </datalist><br><br>
+                <label for="choice">Select your domain</label><br>
+                <input type="checkbox" >
+                <label >Web Development</label>
+                <input type="checkbox">
+                <label >HUMAN RESOURCES</label>
+                <input type="checkbox" >
+                <label >FININCAL MANAGMENT</label><br>
+                <label>About Yourself (two lines) :</label><br>
+                <textarea cols="80" rows="2" placeholder="ABOUT YOURSELF (two lines):"></textarea><br><br>
+                <input type="submit" value="SUBMIT" style="border:1px solid #fff;border-radius: 10px;">
+            </form>
+        </div>
+</body>
+</html>
